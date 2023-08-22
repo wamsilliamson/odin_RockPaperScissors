@@ -1,0 +1,24 @@
+body {
+	min-height: 100vh;
+	justify-content: space-between;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+#playerOne {
+	background-color: black;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+.circle {
+	background: #32557f;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%; 
+ }
+
+ 
