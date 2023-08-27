@@ -3,19 +3,55 @@ html body {
 	margin: 0;
 }
 
-* {
+/* * {
 	border: 2px solid red;
- }
+ } */
 
- .canvas {
+.canvas {
 	display: grid;
-	grid-template-columns: 1fr ;
- }
+	grid-template-columns: 1fr;
+}
 
-.scoreboard,
-.choices,
 .game {
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.5fr 1fr 1fr;
+	grid-auto-flow: column;
 	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+}
+
+.scoreboard {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-auto-flow: dense;
+	justify-content: space-evenly;
+	justify-items: center;
+}
+
+.choices {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.playerCard {
+	display: flex;
+	justify-content: center;
+}
+
+.choice {
+	justify-self: center;
+	width: 200%;
+}
+
+#playerOne>* {
+	border: 2px solid blue;
+}
+
+#playerOne>*>* {
+	background-color: White;X
+	border: 2px solid blue;
 }
